@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 
 if __name__ == "__main__":
 
-  rospy.init_node("no_migue")
+  rospy.init_node("no")
   
   vel_publisher = rospy.Publisher("/turtle1/cmd_vel", Twist, queue_size=10)
   vel_msg  = Twist()
