@@ -11,13 +11,12 @@ A proposta foi simular o movimento de uma tartaruga do ponto cartesiano **(0,0)*
 ## Organização
 A organização das pastas é a seguinte:
 
-- `controller` - Contém o código com extensão *.ino* que deve ser carregado no Arduino.
+- `src/` - Contém a pasta *turtle*.
 
-- `paper` - Contém os arquivos necessários ao *Latex* para geração do artigo. 
+- `src/turtle` - Contém a pasta *scripts*, arquivo CMAkeLists.txt e package.xml. 
   
-- `resources` - Arquivos de suporte geral ao repositório, bem como o arquivo *Critérios_PONG.pdf* com os critérios para o pleno cumprimento do desafio.
+- `src/turtle/scripts` - Contêm o script *turtlechallenge.py*, o qual será buildado.
 
-- `receiver_p3` - Contém o código do *Processing 3* e seus arquivos de apoio (fonte das letras e trilha sonora).
 
 ## Instalação
 Para execução do jogo na sua máquina siga o passo-a-passo de instalação conforme explicado abaixo ou nos links dos tutoriais disponibilizados.
@@ -26,7 +25,7 @@ Para execução do jogo na sua máquina siga o passo-a-passo de instalação con
 Para fazer o download deste repositório basta clonar numa pasta de sua `preferência`.
 
 ```
-$ git clone https://github.com/GabrielCalmon/Desafio_Pong_2021-1
+$ git clone https://github.com/marcellabecker/catkin_ws
 ``` 
 
 ### Arduino
