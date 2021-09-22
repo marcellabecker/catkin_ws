@@ -19,51 +19,53 @@ A organização das pastas é a seguinte:
 
 
 ## Instalação
-Para execução do jogo na sua máquina siga o passo-a-passo de instalação conforme explicado abaixo ou nos links dos tutoriais disponibilizados.
+É necessário ter o **[ROS NOETIC](http://wiki.ros.org/noetic/Installation)** instalado na máquina para buildar.
+
 
 ### Repositório GitHub
-Para fazer o download deste repositório basta clonar numa pasta de sua `preferência`.
+Após instalado o **[ROS NOETIC](http://wiki.ros.org/noetic/Installation)**, clone o repositório.
 
 ```
 $ git clone https://github.com/marcellabecker/catkin_ws
 ``` 
 
-### Arduino
-Para instalação da IDE Arduino acesse https://www.arduino.cc/en/software e escolha a opção referente ao seu sistema operacional.
+### Build
+Agora abra o terminal e navegue até a pasta **catkin_ws**.
+```
+$ cd https://github.com/marcellabecker/catkin_ws
+``` 
+Digite o comando: 
+```
+$ catkin_make
+``` 
+e o programa estará buildado.
 
-Caso prefira, é possível acessar o compilador online https://create.arduino.cc/editor
+### Roscore
+Para que a simulação funcione corretamente é preciso rodar um core.
+**Em outro terminal**, digite:
+```
+$ roscore
+``` 
 
-### Processing 3
-Para instalação do Processing 3 acesse https://processing.org/download/ e escolha a opção referente ao seu sistema operacional.
+### Run Node
+Agora é necessário inicializar o node. Na pasta **catkin_wk** abra um terminal e digite:
 
-Também é necessária a instalação da biblioteca *Sound* do *processing 3*, conforme os passos enumerados nas imagens abaixo abaixo:
+```
+$ rosrun turtlesim turtlesim_node
+``` 
+### Setup
+Na pasta catkin_wk. digite, **em outro terminal**, o comando:
+```
+$ source devel/setup.bash
+``` 
+Agora todas as funções estão carregadas.
 
-- **1.** Clique em "Sketch"
-- **2.** Clique em "Importar Biblioteca"
-- **3.** Clique em "Adicionar Biblioteca..."
-- **4.** Na barra de busca digite "sound"
-- **5.** Busque pela biblioteca chamada "Sound" e que tenha como *Author* (autor) "The Processing Foundation"
-- **6.** Clique em "Install" (instalar)
-
-![banner](https://github.com/GabrielCalmon/Desafio_Pong_2021-1/blob/main/resources/processing-bib-1.png?raw=true)
-![banner](https://github.com/GabrielCalmon/Desafio_Pong_2021-1/blob/main/resources/processing-bib-2.png?raw=true)
-
-## Desenvolvimento
-### Hardware
-O esquema de ligação necessário ao projeto pode ser visto na imagem abaixo:
-
-![banner](https://github.com/GabrielCalmon/Desafio_Pong_2021-1/blob/main/resources/circuito-ligacoes.jpeg?raw=true)
-
-### Software
-Abra o arquivo *controllers.ino* localizado na pasta ```Desafio_Pong_2021-1/controllers``` e carregue-o no seu Arduino
-
-Em seguida abra o arquivo *receiver_p3.pde* localizado na pasta ```Desafio_Pong_2021-1/receiver_p3```, localize a variável do tipo String chamada "com_usada" e altere o texto entre aspas pelo nome porta do seu computador a qual o Arduino está conectado.
-
-```String com_usada = "NOME DA PORTA";```
-
-Caso não saiba o nome da porta utilizada abra a IDE Arduino e no canto inferior direito da tela estará escrito a informação desejada, conforme a imagem abaixo.
-
-![banner](https://github.com/GabrielCalmon/Desafio_Pong_2021-1/blob/main/resources/arduino-porta.png?raw=true)
+### Run py file
+Por fim digite:
+```
+$ rosrun turtlechallenge.py
+``` 
+Aparecerá no console o input para arbitrar os valores de **x** e **y**.
 
 ## Informações para Contato
 Caso deseje falar com os desenvolvedores do projeto seguem informações para contato:
@@ -72,15 +74,14 @@ Caso deseje falar com os desenvolvedores do projeto seguem informações para co
 - Email: alexandre.s@aln.senaicimatec.edu.br
 - GitHub: https://github.com/Alexandreaags
 
-**Gabriel Calmon**
-- Email: joao.calmon@aln.senaicimatec.edu.br
-- GitHub: https://github.com/GabrielCalmon
-- Lattes: http://lattes.cnpq.br/3714599132684846
+**Eduardo Lôbo Teixeira Filho**
+- Email: eduardo.lobo@ieee.org
+- GitHub: https://github.com/sirlobardo
+- LinkedIn: https://www.linkedin.com/in/eduardo-l%C3%B4bo-8a4b961b3/
 
-**Vitor Mendes**
-- Email: joao.mendes@aln.senaicimatec.edu.br
-- GitHub: https://github.com/vitorsmends
-- Lattes: http://lattes.cnpq.br/1253937974490834
-- LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-v%C3%ADtor-s-mendes-aa2ab71b5
+**Marcella**
+- Email: 
+- GitHub: https://github.com/marcellabecker
+- LinkedIn: https://www.linkedin.com/in/marcella-santos-b20b42161/
 
 *“Fazer ou não fazer. Tentativa não há”* - Mestre Yoda
