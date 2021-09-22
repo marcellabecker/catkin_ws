@@ -51,7 +51,7 @@ $ roscore
 ![banner](/pictures/2.jpg)
 
 ### Run Node
-Agora é necessário inicializar o node. Na pasta **catkin_wk** abra um terminal e digite:
+Agora é necessário inicializar o node. Na pasta **catkin_wk** abra um novo terminal e digite o comando:
 
 ```
 $ rosrun turtlesim turtlesim_node
@@ -66,7 +66,7 @@ Agora todas as funções estão carregadas.
 ### Run py file
 Por fim digite:
 ```
-$ rosrun turtlechallenge.py
+$ rosrun turtle turtlechallenge.py
 ``` 
 Aparecerá no console o input para arbitrar os valores de **x** e **y**.
 
@@ -74,7 +74,7 @@ Aparecerá no console o input para arbitrar os valores de **x** e **y**.
 Caso deseje falar com os desenvolvedores do projeto seguem informações para contato:
 
 **Alexandre Adonai**
-- Email: alexandre.s@aln.senaicimatec.edu.br
+- Email: alexandre.adonai@ieee.org
 - GitHub: https://github.com/Alexandreaags
 
 **Eduardo Lôbo Teixeira Filho**
@@ -82,7 +82,7 @@ Caso deseje falar com os desenvolvedores do projeto seguem informações para co
 - GitHub: https://github.com/sirlobardo
 - LinkedIn: https://www.linkedin.com/in/eduardo-l%C3%B4bo-8a4b961b3/
 
-**Marcella**
+**Marcella Giovanna Santos**
 - Email: marcella.santos@ieee.org
 - GitHub: https://github.com/marcellabecker
 - LinkedIn: https://www.linkedin.com/in/marcella-santos-b20b42161/
