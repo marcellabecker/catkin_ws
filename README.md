@@ -80,7 +80,7 @@ Caso deseje falar com os desenvolvedores do projeto seguem informações para co
 - LinkedIn: https://www.linkedin.com/in/eduardo-l%C3%B4bo-8a4b961b3/
 
 **Marcella**
-- Email: 
+- Email: marcella.santos@ieee.org
 - GitHub: https://github.com/marcellabecker
 - LinkedIn: https://www.linkedin.com/in/marcella-santos-b20b42161/
 
