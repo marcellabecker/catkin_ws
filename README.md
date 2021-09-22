@@ -4,9 +4,9 @@
 ## Introdução
 ![banner](/pictures/1.jpg)
 
-Este repositório foi criado para o desenvolvimento do desafio da AV3 da disciplina **Sistemas Embarcados** referente ao período letivo de 2021.1.
+A atividade foi feita pelos voluntários do Laboratório **BIR - Brazilian in Robotics** durante o segundo período do ano letivo - 2021.2.
 
-O desafio consistia na criação de um jogo inspirado no Pong com a interface gráfica desenvolvida no Processing 3 e empregando um Arduino, botões e potenciômetros para construção do hardware.
+A proposta foi simular o movimento de uma tartaruga do ponto cartesiano **(0,0)** a um ponto arbitrado pelo usuário **(x,y)**.
 
 ## Organização
 A organização das pastas é a seguinte:
