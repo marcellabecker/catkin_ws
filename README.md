@@ -41,11 +41,14 @@ $ catkin_make
 e o programa estará buildado.
 
 ### Roscore
+
 Para que a simulação funcione corretamente, é preciso rodar um core.
 **Em outro terminal**, digite:
 ```
 $ roscore
 ``` 
+
+![banner](/pictures/2.jpg)
 
 ### Run Node
 Agora é necessário inicializar o node. Na pasta **catkin_wk** abra um terminal e digite:
