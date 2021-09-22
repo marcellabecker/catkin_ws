@@ -4,7 +4,7 @@
 ## Introdução
 ![banner](/pictures/1.jpg)
 
-A atividade foi feita pelos voluntários do Laboratório **BIR - Brazilian in Robotics** durante o segundo período do ano letivo - 2021.2.
+A atividade foi feita pelos voluntários do Laboratório **BIR - Brazilian in Robotics -** durante o segundo período do ano letivo, 2021.2.
 
 A proposta foi simular o movimento de uma tartaruga do ponto cartesiano **(0,0)** a um ponto arbitrado pelo usuário **(x,y)**.
 
@@ -41,7 +41,7 @@ $ catkin_make
 e o programa estará buildado.
 
 ### Roscore
-Para que a simulação funcione corretamente é preciso rodar um core.
+Para que a simulação funcione corretamente, é preciso rodar um core.
 **Em outro terminal**, digite:
 ```
 $ roscore
