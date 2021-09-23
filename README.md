@@ -56,6 +56,8 @@ Agora é necessário inicializar o node. Na pasta **catkin_ws** abra um novo ter
 ```
 $ rosrun turtlesim turtlesim_node
 ``` 
+![banner](/pictures/1.jpg)
+
 ### Setup
 Na pasta catkin_wk. digite, **em outro terminal**, o comando:
 ```
