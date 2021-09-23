@@ -4,35 +4,35 @@
 ## Introdução
 ![banner](/pictures/1.jpg)
 
-A atividade foi feita pelos voluntários do Laboratório **BIR - Brazilian in Robotics -** durante o segundo período do ano letivo, 2021.2.
+A atividade foi feita pelos voluntários do Laboratório ** RoSA - Robótica e Sistemas Autônomos ** durante o segundo período do ano letivo, 2021.2.
 
-A proposta foi simular o movimento de uma tartaruga do ponto cartesiano **(0,0)** a um ponto arbitrado pelo usuário **(x,y)**.
-
-## Organização
-A organização das pastas é a seguinte:
-
-- `src/` - Contém a pasta *turtle*.
-
-- `src/turtle` - Contém a pasta *scripts*, arquivo CMAkeLists.txt e package.xml. 
-  
-- `src/turtle/scripts` - Contêm o script *turtlechallenge.py*, o qual será buildado.
+A proposta foi simular o movimento de uma tartaruga em um plano cartesiano a um ponto arbitrado pelo usuário **(x,y)**.
 
 
 ## Instalação
 É necessário ter o **[ROS NOETIC](http://wiki.ros.org/noetic/Installation)** instalado na máquina para buildar.
 
 
-### Repositório GitHub
-Após instalado o **[ROS NOETIC](http://wiki.ros.org/noetic/Installation)**, clone o repositório.
+### Criação de Workspace
+Após instalado o **[ROS NOETIC](http://wiki.ros.org/noetic/Installation)**, crie um workspace.
 
+```bash
+$ mkdir -p ~/catkin_ws/src
 ```
-$ git clone https://github.com/marcellabecker/catkin_ws
+
+### Repositório GitHub
+
+clone o repositório.
+
+```bash
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/marcellabecker/turtle
 ``` 
 
 ### Build
 Agora abra o terminal e navegue até a pasta **catkin_ws**.
 ```
-$ cd https://github.com/marcellabecker/catkin_ws
+$ cd ~/catkin_ws
 ``` 
 Digite o comando: 
 ```
@@ -51,7 +51,7 @@ $ roscore
 ![banner](/pictures/2.jpg)
 
 ### Run Node
-Agora é necessário inicializar o node. Na pasta **catkin_wk** abra um novo terminal e digite o comando:
+Agora é necessário inicializar o node. Na pasta **catkin_ws** abra um novo terminal e digite o comando:
 
 ```
 $ rosrun turtlesim turtlesim_node
@@ -76,6 +76,7 @@ Caso deseje falar com os desenvolvedores do projeto seguem informações para co
 **Alexandre Adonai**
 - Email: alexandre.adonai@ieee.org
 - GitHub: https://github.com/Alexandreaags
+- LinkedIn: https://www.linkedin.com/in/alexandre-adonai-365a35211/
 
 **Eduardo Lôbo Teixeira Filho**
 - Email: eduardo.lobo@ieee.org
@@ -85,6 +86,6 @@ Caso deseje falar com os desenvolvedores do projeto seguem informações para co
 **Marcella Giovanna Santos**
 - Email: marcella.santos@ieee.org
 - GitHub: https://github.com/marcellabecker
-- LinkedIn: https://www.linkedin.com/in/marcella-santos-b20b42161/
+- LinkedIn: https://www.linkedin.com/in/marcellagsantos
 
-*“Fazer ou não fazer. Tentativa não há”* - Mestre Yoda
+*“Do or do not. There is no try.”* - Mestre Yoda
