@@ -1,31 +1,31 @@
 #! /usr/bin/env python3
-import rospy
-from geometry_msgs.msg import Twist
+import rospy      #é uma biblioteca Python pura para ROS
+from geometry_msgs.msg import Twist #expressa a velocidade no espaço dividida em lineares e angulares
 from turtlesim.msg import Pose
 from math import atan2, sqrt
 
-def poseCb(data):
+def poseCb(data): #callback
   global curr_pose
   curr_pose = data
 
 if __name__ == "__main__":
-  rospy.init_node("turtle_challenge")
+  rospy.init_node("turtle_challenge") #que inicializa o nó ROS
 
-  vel_publisher = rospy.Publisher("/turtle1/cmd_vel", Twist, queue_size=10)
-  rospy.Subscriber("/turtle1/pose", Pose, poseCb)
+  vel_publisher = rospy.Publisher("/turtle1/cmd_vel", Twist, queue_size=10) #publicar mensagens no tópico cmd_vel
+  rospy.Subscriber("/turtle1/pose", Pose, poseCb)#recebe a mensagem de coordenada da posição
 
-  vel_msg = Twist()
+  vel_msg = Twist()  
   curr_pose = Pose()
 
   goal_x = float(input("X: "))
   goal_y = float(input("Y: "))
 
-  kp_lin = 0.8
-  kp_ang = 3.0
+  kp_lin = 0.8  #controle
+  kp_ang = 3.0  #controle
 
-  rate = rospy.Rate(10)
+  rate = rospy.Rate(10) #fazer um loop na taxa desejada que é 10 (10 vezes/s)
 
-  while not rospy.is_shutdown():
+  while not rospy.is_shutdown():#is_shutdown () para verificar se seu programa deve sair 
 
     delta_x = goal_x - curr_pose.x
     delta_y = goal_y - curr_pose.y
@@ -36,10 +36,10 @@ if __name__ == "__main__":
     vel_msg.linear.x = kp_lin * distance
     vel_msg.angular.z = kp_ang * ang_distance
 
-    vel_publisher.publish(vel_msg)
+    vel_publisher.publish(vel_msg) #chama o publish
 
-    rate.sleep()
+    rate.sleep() #mantem a taxa desejada de loop do rate
 
-    if abs(distance) <= 1e-1:
-      rospy.loginfo("Done!!")
+    if abs(distance) <= 1e-1: #erro
+      rospy.loginfo("Done!!") #done
       break
