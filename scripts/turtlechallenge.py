@@ -20,8 +20,8 @@ if __name__ == "__main__":
   goal_x = float(input("X: "))
   goal_y = float(input("Y: "))
 
-  kp_lin = 0.8  #controle
-  kp_ang = 3.0  #controle
+  kp_lin = 0.8  #controle velocidade linear
+  kp_ang = 3.0  #controle velocidade angular
 
   rate = rospy.Rate(10) #fazer um loop na taxa desejada que é 10 (10 vezes/s)
 
@@ -41,5 +41,5 @@ if __name__ == "__main__":
     rate.sleep() #mantem a taxa desejada de loop do rate
 
     if abs(distance) <= 1e-1: #erro
-      rospy.loginfo("Done!!") #done
+      rospy.loginfo("Done!!") #printa DONE
       break
