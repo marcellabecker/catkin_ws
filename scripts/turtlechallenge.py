@@ -4,12 +4,12 @@ from geometry_msgs.msg import Twist #expressa a velocidade no espaço dividida e
 from turtlesim.msg import Pose
 from math import atan2, sqrt
 
-def poseCb(data): #callback
+def poseCb(data): #callback chamado qnd o subscriber recebe um dado do tópico
   global curr_pose
   curr_pose = data
 
 if __name__ == "__main__":
-  rospy.init_node("turtle_challenge") #que inicializa o nó ROS
+  rospy.init_node("turtle_challenge") #inicializa o nó ROS
 
   vel_publisher = rospy.Publisher("/turtle1/cmd_vel", Twist, queue_size=10) #publicar mensagens no tópico cmd_vel
   rospy.Subscriber("/turtle1/pose", Pose, poseCb)#recebe a mensagem de coordenada da posição
