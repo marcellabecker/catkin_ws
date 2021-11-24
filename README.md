@@ -72,6 +72,10 @@ $ rosrun turtle turtlechallenge.py
 ``` 
 Aparecerá no console o input para arbitrar os valores de **x** e **y**.
 
+### Vídeo
+
+[![Video](resources/print.png)](https://youtu.be/NNkwSgDScuY)
+
 ## Informações para Contato
 Caso deseje falar com os desenvolvedores do projeto seguem informações para contato:
 
